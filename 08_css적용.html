@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- css는 <style> 태그 내에 작성하는 코드 (html 코드와 다름) -->
+    <style>
+        /* style 코드 내 작성하는 코드는 css 코드로 */
+        /* 주석 모양도 다르다, 여기는 css 코드로 html코드와는 다르다. */
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            background-color: red;
+        }
+/* 하나의 스타일만 적용하더라도 css를 이용하는 편이다. */
+        .bg-red{
+            background-color: red;
+        }
+        .bg-green{background-color: green;} 
+
+        /* 색 적용하기  */
+        .name-color{
+            background-color: blueviolet;
+        }
+/* rgb로 적용하기 */
+.rgb-color{
+    background-color: rgb(255,0,0
+    );}
+    /* hex코드로 적용하기 */
+    .hex-color{
+        background-color: #ff0000;
+    }
+/* 투명도 설정(rgba , 투명도는 0~1사이 소수, 1은 불투명) */
+.rgba-color{
+    background-color: rgba(255,0,0,0.5);
+}
+/* 투명도 설정 (hex) */
+.rgba-hex{
+    background-color: black;
+}
+
+
+</style>
+
+</head>
+
+<body>
+    <!-- 태그에 style을 직접 주는 경우, 중복되는 style에 대해 수정할 때 불편하다. -->
+    <!-- css에 해당 style을 정의 내리고, 각 태그에서 이를 불러다 적용 시키는 방식을 이용한다. -->
+    <div style="width:100px; height:100px; background-color: red;"></div>
+    <div style="width:100px; height:100px; background-color: green;"></div>
+    <div style="width:100px; height:100px; background-color: blue;"></div>
+<hr>
+<!-- css로 선언한 스타일을 태그에 적용하기 -->
+<!-- class 속성에 선언한 스타일명 넣기 -->
+<div class="box" style="background-color: red;"></div>
+<div class="box" style="background-color: green;"></div>
+<div class="box" style="background-color: blue;"></div>
+
+
+<hr>
+<!-- 하나 이상의 css 스타일을 적용하기 -->
+<div class="box bg-red"></div>
+<div class="box bg-green"></div>
+
+<hr>
+
+<div class="box rgba-color"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

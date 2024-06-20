@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--태그 내 type 같은 부분을 (속성)attribute  -->
+<input type="text" placeholder="아이디">
+<input type="password" placeholder="비밀번호">
+<!-- 컨트롤 + 스페이스 자동완성 기능 -->
+<!--사용자의 클릭 이벥트를 입력받는 용도 좀 구림  -->
+<input type="button" value="로그인">
+<!-- 버튼 태그가 따로 존재 -->
+<button>로그인</button>
+<button>회원가입</button>
+<!-- 버튼 안에 아이콘 넣기 , input type은 불가능 , butten은 가능 -->
+<button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search-heart" viewBox="0 0 16 16">
+    <path d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018"/>
+    <path d="M13 6.5a6.47 6.47 0 0 1-1.258 3.844q.06.044.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11"/>
+</svg></button>
+<!-- 줄바꿈 <br> -->
+<br>
+동해물과 백두산이
+<!-- 화면에 줄긋기 <hr> -->
+<hr>
+<!-- 파일 입력 받기 -->
+<input type="file" name="id">
+<hr>
+<!-- 라디오 버튼 -->
+<!-- 보기 문항 중 하나만 선택받을 떄 사용  -->
+<!-- 동일한 name을 이용해서 그룹화 할 수 있다. -->
+<!-- checked 속성을 넣으면 미리 체크가 되어있게 만든다. -->
+<!-- label 태그의 for 와 input 태그의 id를 일치시키면 label 클릭 시 input 태그가 활성화된다. -->
+<input type="radio" name="gender" id="male" checked>
+<label for="male">남성</label>
+<input type="radio" name="gender" id="female">
+<label for="female">여성</label>
+<input type="radio" name="gender" id="">중성
+<hr>
+<!-- 체크박스는 중복선택을 입력받거나, 선택하지 않아도 되는 항목에 사용 -->
+github 사용 목적
+<br>
+<br>
+<input type="checkbox" name="" id="vc"> <label for="vc">코드 버전 관리</label>
+<input type="checkbox" name="" id="vc1"> <label for="vc1">협업</label>
+<input type="checkbox" name="" id="">커뮤니티 이용
+<hr>
+<!-- 셀렉트 박스 -->
+<select name="" id="">
+    <option value="">=====선택=====</option>
+    <option value="">내 보물 1호는?</option>
+    <option value="">내 학창시절 별명은?</option>
+    <option value="">내가 다닌 초등학교 이름은?</option>
+</select>
+<hr>
+<!-- 텍스트를 열어줄 입력받기 -->
+자기소개 작성
+<br>
+<textarea name="" id=""></textarea>
+<hr>
+<!-- 색상 입력받기 -->
+테마 색 선택
+<br>
+<input type="color" name="" id="">
+<!-- 날짜 입력받기 -->
+<hr>
+대학교 졸업일자
+<br>
+<input type="date" name="" id="">
+<hr>
+<!-- 숫자 입력받기 -->
+나이
+<br>
+<input type="number" name="" id="">
+<hr>
+<!-- 음량 조절 같은거 입력받기 -->
+<input type="range" name="" id="">
+<!-- 숫자 범위를 넣어주어야 유의미하게 사용 -->
+<input type="range" name="" id="" min="0" max="100" value="100">
+<!-- 난이도 선택 1단위로 움직임. step으로 단위 조정가능-->
+<input type="range" name="" id="" min="0" max="100" step="10">
+
+
+
+
+</body>
+</html>
