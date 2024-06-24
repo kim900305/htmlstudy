@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            border: 2px solid black;
+            height: 200px;
+            /* 박스 내 요소들 정렬 */
+            display: flex;
+            /* 가로 방향 정렬 위치 설정 */
+            justify-content: center;
+            /* 세로 방향 정렬 위치 설정 */
+            align-items: end;
+        }
+
+        .box2 {
+            border: 2px solid black;
+            height: 200px;
+            /* 내부 요소를 수평나열 */
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+
+        .box2>div {
+            border: 2px solid black;
+            width: 100px;
+            height: 30px;
+        }
+
+        .box3 {
+            border: 2px solid black;
+            height: 200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .box3>div {
+            border: 2px solid black;
+            width: 100px;
+            height: 30px;
+        }
+
+        .navigation {
+            border: 2px solid black;
+
+        }
+
+        .navigation>div {
+            border: 2px solid red;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .navigation>div:n
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navigation">
+        <div>
+            <img src="https://cdn.imweb.me/thumbnail/20231106/fa1de722b8b8c.png" alt="" width="200">
+        </div>
+        <div>
+            <div class="menu">
+                <a href="">교육원소개</a>
+                <div class="dropdown">
+                    <a href="">교욱원 소개</a></div>
+                    <a href=""></a>인사말</div>
+                    <a href=""></a>언론보도</div>
+            </div>
+            <div>
+                <a href="">과정안내</a>
+            </div>
+            <div>
+                <a href="">취업센터</a>
+            </div>
+            <div>
+                <a href="">프로젝트</a>
+            </div>
+        </div>
+        <div>
+            <button>로그인</button>
+            <img src="https://cdn.imweb.me/upload/S2023070315976c924cb4e/2706a2c258507.png" alt="" width="50">
+        </div>
+        <div class="box">
+            <a href="">네이버</a>
+            <a href="">구글</a>
+            <a href="">카카오</a>
+        </div>
+
+        <div class="box2">
+            <!-- 수평 방향으로 나열된 상태로 정렬을 하고자 한다. -->
+            <div></div>
+            <div></div>
+            <div></div>
+
+
+
+        </div>
+        <div class="box3">
+            <!-- 수평 방향으로 찢기. -->
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .text {
+            /* 1.공중으로 띄운다 */
+            position: absolute;
+            /* 3.위치 지정 */
+            top: 40px;
+            left: 100px;
+            color: white;
+        }
+
+        .box {
+            /* 2.공중에 띄운 자식 태그 요소를 부모 태그를 기준으로 위치를 지정하기 위해 position: relavtiv;
+            를 부여해주어야 한다. */
+            position: relative;
+            width: 1200px;
+            height: 200px;
+        }
+
+        /* 부모 width 크기를 의미 (1200px이면 100% = 1200px ,50% = 600px 적용) */
+        .box>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .text2 {
+            position: absolute;
+            /* 부모 height의 절반, width의 절반을 의미 */
+            top: 50%;
+            left: 50%;
+            color: white;
+
+        }
+
+        .quick > div{
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+        }
+/* 마우스 커서를 올렸을때 style적용 */
+.quick > div:hover{
+    background-color: orange;
+    color: white;
+}
+        .quick{
+            position: fixed;
+            right: 0;
+            top: 50%;
+            background-color: yellow;
+            transform: translate(0,-50%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <!-- 기본적으로 태그 영역은 서로 겹쳐지지 않는다. -->
+        <img src="./images/노을.jpg" alt="">
+        <!-- 겹치게 하기 위해 h1태그를 공중으로 띄운 후 원하는 위치로 이동시킨다. -->
+        <h1 class="text">석양이 진다</h1>
+    </div>
+
+    <div class="box">
+        <!-- 기본적으로 태그 영역은 서로 겹쳐지지 않는다. -->
+        <img src="./images/노을.jpg" alt="">
+        <!-- 겹치게 하기 위해 h1태그를 공중으로 띄운 후 원하는 위치로 이동시킨다. -->
+        <h1 class="text2">석양이 진다</h1>
+    </div>
+    <!-- 화면 우측 중앙에 고정되는 메뉴바 -->
+    <div class="quick">
+        <div>빠른상담</div>
+        <div>카톡상담</div>
+        <div>질문답변</div>
+    </div>
+</body>
+
+</html>
